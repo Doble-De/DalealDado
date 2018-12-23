@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#67AB9F</color>
+    <color name="colorPrimaryDark">#568F84</color>
+    <color name="colorAccent">#d81b31</color>
+    <color name="colorLetrasMadera">#281609</color>
+    <color name="colorFondoDados">#D5E8D4</color>
+    <color name="colorFondoEscenario">#004c99</color>
+</resources>
