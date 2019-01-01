@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dalealdado.dalealdado">
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,14 +19,20 @@
             </intent-filter>
         </activity>
         <activity android:name=".DadosActivity" />
-        <activity android:name=".info" />
+        <activity android:name=".InfoActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".Escenarios" />
-        <activity android:name=".info_escenario"></activity>
+        <activity
+            android:name=".PersonajesActivity"
+            android:label="@string/title_activity_personajes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".EnemigosNewActivity" />
+        <activity android:name=".EnemigosShowActivity" />
+        <activity android:name=".HeroesNewActivity" />
+        <activity android:name=".HeroesShowActivity"></activity>
     </application>
 
 </manifest>

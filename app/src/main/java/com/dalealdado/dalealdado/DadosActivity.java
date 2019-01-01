@@ -10,6 +10,7 @@ import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.os.SystemClock;
+import android.os.Vibrator;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -71,6 +72,9 @@ public class DadosActivity extends AppCompatActivity {
 
             @Override
             public void onShake(int count) {
+
+                Vibrator vibrator = (Vibrator)getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE);
+                vibrator.vibrate(500);
                 /*
                  * The following method, "handleShakeEvent(count):" is a stub //
                  * method you would use to setup whatever you want done once the
