@@ -32,7 +32,8 @@
         <activity android:name=".EnemigosNewActivity" />
         <activity android:name=".EnemigosShowActivity" />
         <activity android:name=".HeroesNewActivity" />
-        <activity android:name=".HeroesShowActivity"></activity>
+        <activity android:name=".HeroesShowActivity" />
+        <activity android:name=".TiendaActivity"></activity>
     </application>
 
 </manifest>
