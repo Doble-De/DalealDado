@@ -47,5 +47,13 @@ public class MainActivity extends AppCompatActivity {
                 mp.stop();
             }
         });
+
+        findViewById(R.id.bescenarios).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, EscenariosActivity.class));
+                mp.stop();
+            }
+        });
     }
 }

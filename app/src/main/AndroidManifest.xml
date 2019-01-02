@@ -33,7 +33,10 @@
         <activity android:name=".EnemigosShowActivity" />
         <activity android:name=".HeroesNewActivity" />
         <activity android:name=".HeroesShowActivity" />
-        <activity android:name=".ShopActivity"></activity>
+        <activity android:name=".ShopActivity" />
+        <activity android:name=".EscenariosActivity" />
+        <activity android:name=".EscenarioNewActivity" />
+        <activity android:name=".EscenarioShowActivity"></activity>
     </application>
 
 </manifest>
