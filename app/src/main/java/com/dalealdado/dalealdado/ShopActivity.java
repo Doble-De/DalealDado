@@ -3,11 +3,11 @@ package com.dalealdado.dalealdado;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class TiendaActivity extends AppCompatActivity {
+public class ShopActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tienda);
+        setContentView(R.layout.activity_shop);
     }
 }

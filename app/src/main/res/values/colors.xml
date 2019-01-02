@@ -9,4 +9,5 @@
     <color name="enemigo">#d81b31</color>
     <color name="heroe">#1b80d8</color>
     <color name="cajon">#58280f</color>
+    <color name="itemcajon">#e6a1613f</color>
 </resources>

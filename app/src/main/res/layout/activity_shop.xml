@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondotienda"
+    tools:context=".ShopActivity">
+
+    <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        android:padding="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/cajon"
+        app:corner_radius="15dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="@color/itemcajon">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/item1"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            app:srcCompat="@drawable/espada" />
+
+                        <TextView
+                            android:id="@+id/tvitem1"
+                            android:layout_width="130dp"
+                            android:layout_height="33dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Espada del Rey"
+                            android:textAlignment="center"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/tvdinero1"
+                            android:layout_width="33dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:text="100"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/gold1"
+                            android:layout_width="40dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/gold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="@color/itemcajon">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/item2"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            app:srcCompat="@drawable/espada" />
+
+                        <TextView
+                            android:id="@+id/tvitem2"
+                            android:layout_width="130dp"
+                            android:layout_height="33dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Espada del Rey"
+                            android:textAlignment="center"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/tvdinero2"
+                            android:layout_width="33dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:text="100"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/gold2"
+                            android:layout_width="40dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/gold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

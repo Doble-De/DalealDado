@@ -41,4 +41,6 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
 
     implementation 'com.jcminarro:RoundKornerLayouts:0.2.0'
+
+    implementation 'com.github.navasmdc:MaterialDesign:1.5@aar'
 }
