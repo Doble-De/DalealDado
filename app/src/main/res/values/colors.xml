@@ -14,4 +14,5 @@
     <color name="infoescenario">#930b0935</color>
     <color name="infoenemigos">#bd38090a</color>
     <color name="infoeheroes">#c216437e</color>
+    <color name="transparente">#00ffffff</color>
 </resources>
