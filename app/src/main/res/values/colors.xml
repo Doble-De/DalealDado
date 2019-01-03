@@ -11,4 +11,7 @@
     <color name="cajon">#58280f</color>
     <color name="itemcajon">#e6a1613f</color>
     <color name="botonescenario">#4228d1</color>
+    <color name="infoescenario">#930b0935</color>
+    <color name="infoenemigos">#bd38090a</color>
+    <color name="infoeheroes">#c216437e</color>
 </resources>

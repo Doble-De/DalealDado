@@ -12,7 +12,7 @@ import android.view.View;
 
 import java.util.List;
 
-class EscenariosActivity extends AppCompatActivity {
+public class EscenariosActivity extends AppCompatActivity {
 
     AdaptadorEscenario adaptador;
 
