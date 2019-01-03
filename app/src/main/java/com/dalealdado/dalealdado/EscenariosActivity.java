@@ -28,7 +28,7 @@ public class EscenariosActivity extends AppCompatActivity {
             }
         });
 
-        final EscenaroViewModel escenaroViewModel = ViewModelProviders.of(this).get(EscenaroViewModel.class);
+        final EscenarioViewModel escenaroViewModel = ViewModelProviders.of(this).get(EscenarioViewModel.class);
 
         escenaroViewModel.getEscenarios();
 

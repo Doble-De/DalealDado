@@ -13,7 +13,7 @@ public class EscenarioNewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_escenario_new);
 
-        final EscenaroViewModel escenaroViewModel = ViewModelProviders.of(this).get(EscenaroViewModel.class);
+        final EscenarioViewModel escenaroViewModel = ViewModelProviders.of(this).get(EscenarioViewModel.class);
         findViewById(R.id.guardar).setOnClickListener(new View.OnClickListener() {
 
             EditText nombrePokemon = findViewById(R.id.etnombre);
@@ -29,7 +29,7 @@ public class EscenarioNewActivity extends AppCompatActivity {
                 escenario.gen = genPokemon.getText().toString();
                 escenario.desc = descPokemon.getText().toString();
 
-                escenaroViewModel.insert(escenario);
+                escenaroViewModel.insertEscenario(escenario);
                 finish();
             }
         });

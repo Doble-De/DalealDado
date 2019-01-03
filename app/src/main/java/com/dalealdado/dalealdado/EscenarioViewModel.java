@@ -3,28 +3,21 @@ package com.dalealdado.dalealdado;
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
-import android.support.annotation.NonNull;
 
 import java.util.List;
 
-class EscenaroViewModel extends AndroidViewModel {
+public class EscenarioViewModel extends AndroidViewModel {
 
-    EscenarioRepository escenarioRepository;
+    private EscenarioRepository mEscenario;
 
-    public EscenaroViewModel(@NonNull Application application) {
+    public EscenarioViewModel(Application application){
         super(application);
-
-        escenarioRepository = new EscenarioRepository(application);
+        mEscenario = new EscenarioRepository(application);
     }
 
-    public void insert(Escenario escenario){
-        escenarioRepository.insert(escenario);
-    }
+    LiveData<List<Escenario>> getEscenarios(){return mEscenario.getEscenarios();}
 
-    LiveData<List<Escenario>> getEscenarios(){
-        return escenarioRepository.getEscenarios();
-    }
-    LiveData<Escenario> getEscenario(int id){
-        return escenarioRepository.getEscenario(id);
-    }
+    LiveData<Escenario> getEscenario(int id){ return mEscenario.getEscenario(id);}
+
+    public void insertEscenario(Escenario escenario) { mEscenario.insert(escenario);}
 }

@@ -29,7 +29,7 @@ public class AdaptadorEscenario extends RecyclerView.Adapter<AdaptadorEscenario.
     @Override
     public void onBindViewHolder(@NonNull final MyViewHolder holder, int posicion) {
         final Escenario escenario = list.get(posicion);
-        final EscenaroViewModel escenaroViewModel = ViewModelProviders.of(activity).get(EscenaroViewModel.class);
+        final EscenarioViewModel escenaroViewModel = ViewModelProviders.of(activity).get(EscenarioViewModel.class);
 
         holder.pokemonName.setText(escenario.nombre);
         holder.pokemonGen.setText(escenario.gen);

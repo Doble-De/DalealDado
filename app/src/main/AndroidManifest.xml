@@ -36,7 +36,8 @@
         <activity android:name=".ShopActivity" />
         <activity android:name=".EscenariosActivity" />
         <activity android:name=".EscenarioNewActivity" />
-        <activity android:name=".EscenarioShowActivity"></activity>
+        <activity android:name=".EscenarioShowActivity" />
+        <activity android:name=".EscenarioActivity"></activity>
     </application>
 
 </manifest>

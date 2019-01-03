@@ -18,7 +18,7 @@ public class EscenarioShowActivity extends AppCompatActivity {
         final TextView tvNombre = findViewById(R.id.tvnombre);
         final TextView tvGeneracion = findViewById(R.id.tvgen);
         final TextView tvDescripcion = findViewById(R.id.tvdesc);
-        final EscenaroViewModel escenaroViewModel = ViewModelProviders.of(this).get(EscenaroViewModel.class);
+        final EscenarioViewModel escenaroViewModel = ViewModelProviders.of(this).get(EscenarioViewModel.class);
         escenaroViewModel.getEscenario(id).observe(this, new Observer<Escenario>() {
             @Override
             public void onChanged(@Nullable Escenario escenario) {
