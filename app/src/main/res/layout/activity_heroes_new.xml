@@ -55,18 +55,18 @@
             <EditText
                 android:id="@+id/etvida"
                 android:layout_width="60dp"
-                android:layout_height="38dp"
-                android:inputType="number"
+                android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
                 android:hint="0"
+                android:inputType="number"
                 app:layout_constraintStart_toEndOf="@+id/tvvida"
                 app:layout_constraintTop_toBottomOf="@+id/etdesc" />
 
             <TextView
                 android:id="@+id/tvvida"
                 android:layout_width="70dp"
-                android:layout_height="38dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="15dp"
                 android:text="Vida"
@@ -78,18 +78,18 @@
             <EditText
                 android:id="@+id/etfuerza"
                 android:layout_width="60dp"
-                android:layout_height="38dp"
-                android:inputType="number"
+                android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
                 android:hint="0"
+                android:inputType="number"
                 app:layout_constraintStart_toEndOf="@+id/tvfuerza"
                 app:layout_constraintTop_toBottomOf="@+id/etvida" />
 
             <TextView
                 android:id="@+id/tvfuerza"
                 android:layout_width="70dp"
-                android:layout_height="38dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="15dp"
                 android:text="Fuerza"
@@ -101,18 +101,18 @@
             <EditText
                 android:id="@+id/etdefensa"
                 android:layout_width="60dp"
-                android:layout_height="38dp"
-                android:inputType="number"
+                android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
                 android:hint="0"
+                android:inputType="number"
                 app:layout_constraintStart_toEndOf="@+id/tvdefensa"
                 app:layout_constraintTop_toBottomOf="@+id/etfuerza" />
 
             <TextView
                 android:id="@+id/tvdefensa"
                 android:layout_width="70dp"
-                android:layout_height="38dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="15dp"
                 android:text="Defensa"
@@ -124,18 +124,18 @@
             <EditText
                 android:id="@+id/etevasion"
                 android:layout_width="60dp"
-                android:layout_height="38dp"
-                android:inputType="number"
+                android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
                 android:hint="0"
+                android:inputType="number"
                 app:layout_constraintStart_toEndOf="@+id/tvevasion"
                 app:layout_constraintTop_toBottomOf="@+id/etdefensa" />
 
             <TextView
                 android:id="@+id/tvevasion"
                 android:layout_width="70dp"
-                android:layout_height="38dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="15dp"
                 android:text="Evasion"
@@ -147,18 +147,18 @@
             <EditText
                 android:id="@+id/etagilidad"
                 android:layout_width="60dp"
-                android:layout_height="38dp"
-                android:inputType="number"
+                android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
                 android:hint="0"
+                android:inputType="number"
                 app:layout_constraintStart_toEndOf="@+id/tvagilidad"
                 app:layout_constraintTop_toBottomOf="@+id/etevasion" />
 
             <TextView
                 android:id="@+id/tvagilidad"
                 android:layout_width="70dp"
-                android:layout_height="38dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="15dp"
                 android:text="Agilidad"
@@ -194,11 +194,11 @@
             <EditText
                 android:id="@+id/etmana"
                 android:layout_width="60dp"
-                android:layout_height="38dp"
-                android:inputType="number"
+                android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
                 android:hint="0"
+                android:inputType="number"
                 app:layout_constraintStart_toEndOf="@+id/tvmana"
                 app:layout_constraintTop_toBottomOf="@+id/etdesc" />
 
@@ -215,7 +215,7 @@
             <TextView
                 android:id="@+id/tvmana"
                 android:layout_width="70dp"
-                android:layout_height="38dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="15dp"
                 android:text="Mana"
@@ -227,18 +227,18 @@
             <EditText
                 android:id="@+id/etmagia"
                 android:layout_width="60dp"
-                android:layout_height="38dp"
-                android:inputType="number"
+                android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
                 android:hint="0"
+                android:inputType="number"
                 app:layout_constraintStart_toEndOf="@+id/tvmagia"
                 app:layout_constraintTop_toBottomOf="@+id/etmana" />
 
             <TextView
                 android:id="@+id/tvmagia"
                 android:layout_width="70dp"
-                android:layout_height="38dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="15dp"
                 android:text="Magia"
