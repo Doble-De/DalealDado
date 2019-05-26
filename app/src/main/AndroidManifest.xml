@@ -11,51 +11,51 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".view.Aventura.Dialogs.FuenteDialog"></activity>
-        <activity android:name=".view.Aventura.Dialogs.SelectPj" />
-        <activity android:name=".view.Aventura.ProtagonistaActivity" />
-        <activity android:name=".view.Aventura.Cueva2" />
-        <activity android:name=".view.Aventura.Cueva1" />
-        <activity android:name=".view.Aventura.Bosque6" />
-        <activity android:name=".view.Aventura.Bosque5" />
-        <activity android:name=".view.Aventura.Bosque4" />
-        <activity android:name=".view.Aventura.Bosque3" />
-        <activity android:name=".view.Aventura.Bosque2" />
-        <activity android:name=".view.Aventura.CasaSenyorHuerto" />
-        <activity android:name=".view.Aventura.Bosque1" />
-        <activity android:name=".view.Aventura.Castillo" />
-        <activity android:name=".view.Aventura.Mercado" />
-        <activity android:name=".view.Aventura.BarrioArma" />
-        <activity android:name=".view.Aventura.BarrioMagia" />
-        <activity android:name=".view.Aventura.Fuente" />
-        <activity android:name=".EnemigosModifActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.dalealdado.choised.view.Aventura.Dialogs.FuenteDialog"></activity>
+        <activity android:name="com.dalealdado.choised.view.Aventura.Dialogs.SelectPj" />
+        <activity android:name="com.dalealdado.choised.view.Aventura.ProtagonistaActivity" />
+        <activity android:name="com.dalealdado.choised.view.Aventura.Cueva2" />
+        <activity android:name="com.dalealdado.choised.view.Aventura.Cueva1" />
+        <activity android:name="com.dalealdado.choised.view.Aventura.Bosque6" />
+        <activity android:name="com.dalealdado.choised.view.Aventura.Bosque5" />
+        <activity android:name="com.dalealdado.choised.view.Aventura.Bosque4" />
+        <activity android:name="com.dalealdado.choised.view.Aventura.Bosque3" />
+        <activity android:name="com.dalealdado.choised.view.Aventura.Bosque2" />
+        <activity android:name="com.dalealdado.choised.view.Aventura.CasaSenyorHuerto" />
+        <activity android:name="com.dalealdado.choised.view.Aventura.Bosque1" />
+        <activity android:name="com.dalealdado.choised.view.Aventura.Castillo" />
+        <activity android:name="com.dalealdado.choised.view.Aventura.Mercado" />
+        <activity android:name="com.dalealdado.choised.view.Aventura.BarrioArma" />
+        <activity android:name="com.dalealdado.choised.view.Aventura.BarrioMagia" />
+        <activity android:name="com.dalealdado.choised.view.Aventura.Fuente" />
+        <activity android:name="com.dalealdado.choised.EnemigosModifActivity" />
+        <activity android:name="com.dalealdado.choised.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DadosActivity" />
-        <activity android:name=".InfoActivity" />
+        <activity android:name="com.dalealdado.choised.DadosActivity" />
+        <activity android:name="com.dalealdado.choised.InfoActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name=".PersonajesActivity"
+            android:name="com.dalealdado.choised.PersonajesActivity"
             android:label="@string/title_activity_personajes"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".EnemigosNewActivity" />
-        <activity android:name=".view.EnemigosShowActivity" />
-        <activity android:name=".HeroesNewActivity" />
-        <activity android:name=".view.HeroesShowActivity" />
-        <activity android:name=".ShopActivity" />
-        <activity android:name=".EscenariosActivity" />
-        <activity android:name=".EscenarioNewActivity" />
-        <activity android:name=".EscenarioShowActivity" />
-        <activity android:name=".EscenarioActivity" />
+        <activity android:name="com.dalealdado.choised.EnemigosNewActivity" />
+        <activity android:name="com.dalealdado.choised.view.EnemigosShowActivity" />
+        <activity android:name="com.dalealdado.choised.HeroesNewActivity" />
+        <activity android:name="com.dalealdado.choised.view.HeroesShowActivity" />
+        <activity android:name="com.dalealdado.choised.ShopActivity" />
+        <activity android:name="com.dalealdado.choised.EscenariosActivity" />
+        <activity android:name="com.dalealdado.choised.EscenarioNewActivity" />
+        <activity android:name="com.dalealdado.choised.EscenarioShowActivity" />
+        <activity android:name="com.dalealdado.choised.EscenarioActivity" />
     </application>
 
 </manifest>

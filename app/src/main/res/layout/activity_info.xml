@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorFondoDados"
-    tools:context=".InfoActivity">
+    tools:context="com.dalealdado.choised.InfoActivity">
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/colorFondoDados"
-            tools:context=".DadosActivity">
+            tools:context="com.dalealdado.choised.DadosActivity">
 
 
             <TextView

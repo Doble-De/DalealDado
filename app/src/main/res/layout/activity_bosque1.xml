@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.Aventura.Bosque1"
+    tools:context="com.dalealdado.choised.view.Aventura.Bosque1"
     android:background="@drawable/bosque1">
 
     <ImageButton
