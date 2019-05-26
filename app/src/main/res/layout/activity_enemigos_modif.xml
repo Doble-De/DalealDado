@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dalealdado.choised.EnemigosModifActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/etEMnombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Introduce el Nombre del Enemigo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etEMraza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Introduce la clase del Enemigo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEMnombre" />
+
+            <EditText
+                android:id="@+id/etEMdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Introduce la descripcion del Enemigo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEMraza" />
+
+            <EditText
+                android:id="@+id/etEMvida"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:hint="0"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/tvvida"
+                app:layout_constraintTop_toBottomOf="@+id/etEMdesc" />
+
+            <TextView
+                android:id="@+id/tvvida"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Vida"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEMdesc" />
+
+            <EditText
+                android:id="@+id/etEMfuerza"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:hint="0"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/tvfuerza"
+                app:layout_constraintTop_toBottomOf="@+id/etEMvida" />
+
+            <TextView
+                android:id="@+id/tvfuerza"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Fuerza"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvvida" />
+
+            <EditText
+                android:id="@+id/etEMdefensa"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:hint="0"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/tvdefensa"
+                app:layout_constraintTop_toBottomOf="@+id/etEMfuerza" />
+
+            <TextView
+                android:id="@+id/tvdefensa"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Defensa"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvfuerza" />
+
+            <EditText
+                android:id="@+id/etEMevasion"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:hint="0"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/tvevasion"
+                app:layout_constraintTop_toBottomOf="@+id/etEMdefensa" />
+
+            <TextView
+                android:id="@+id/tvevasion"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Evasion"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvdefensa" />
+
+            <EditText
+                android:id="@+id/etEMagilidad"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:hint="0"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/tvagilidad"
+                app:layout_constraintTop_toBottomOf="@+id/etEMevasion" />
+
+            <TextView
+                android:id="@+id/tvagilidad"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Agilidad"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvevasion" />
+
+            <TextView
+                android:id="@+id/tvhabilidades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Habilidades"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvagilidad" />
+
+            <EditText
+                android:id="@+id/etEMhabilidades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Habilidades del Enemigo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvhabilidades" />
+
+            <EditText
+                android:id="@+id/etEMmana"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:hint="0"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/tvmana"
+                app:layout_constraintTop_toBottomOf="@+id/etEMdesc" />
+
+            <EditText
+                android:id="@+id/etMdrop"
+                android:layout_width="161dp"
+                android:layout_height="115dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:hint="Introduce el drop"
+                app:layout_constraintStart_toEndOf="@+id/etEMevasion"
+                app:layout_constraintTop_toBottomOf="@+id/tvinventario" />
+
+            <TextView
+                android:id="@+id/tvmana"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:text="Mana"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/etEMvida"
+                app:layout_constraintTop_toBottomOf="@+id/etEMdesc" />
+
+            <EditText
+                android:id="@+id/etEMmagia"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:hint="0"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/tvmagia"
+                app:layout_constraintTop_toBottomOf="@+id/etEMmana" />
+
+            <TextView
+                android:id="@+id/tvmagia"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:text="Magia"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/etEMfuerza"
+                app:layout_constraintTop_toBottomOf="@+id/etEMmana" />
+
+            <TextView
+                android:id="@+id/tvinventario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:text="Drop"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/etEMdefensa"
+                app:layout_constraintTop_toBottomOf="@+id/tvmagia" />
+
+            <Button
+                android:id="@+id/guardarM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="guardar"
+                app:layout_constraintTop_toBottomOf="@+id/etEMhabilidades" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

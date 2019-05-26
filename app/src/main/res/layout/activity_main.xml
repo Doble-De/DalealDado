@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context="com.dalealdado.choised.MainActivity"
     android:background="@drawable/fondobosque"
     >
 
@@ -26,27 +26,23 @@
         android:id="@+id/bdados"
         android:layout_width="260dp"
         android:layout_height="70dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/boton"
         android:fontFamily="cursive"
-        android:text="DADOs"
+        android:text="DADOS"
         android:textColor="@color/colorLetrasMadera"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/bescenarios"
+        app:layout_constraintBottom_toTopOf="@+id/bpersonajes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/baventura" />
 
     <Button
         android:id="@+id/bescenarios"
         android:layout_width="260dp"
         android:layout_height="70dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/boton"
         android:fontFamily="cursive"
@@ -54,17 +50,15 @@
         android:textColor="@color/colorLetrasMadera"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/bpersonajes"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bdados" />
+        app:layout_constraintTop_toBottomOf="@+id/bpersonajes" />
 
     <Button
         android:id="@+id/bpersonajes"
         android:layout_width="260dp"
         android:layout_height="70dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/boton"
         android:fontFamily="cursive"
@@ -72,28 +66,27 @@
         android:textColor="@color/colorLetrasMadera"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btienda"
+        app:layout_constraintBottom_toTopOf="@+id/bescenarios"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bescenarios" />
+        app:layout_constraintTop_toBottomOf="@+id/bdados" />
 
     <Button
-        android:id="@+id/btienda"
+        android:id="@+id/baventura"
         android:layout_width="260dp"
         android:layout_height="70dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="22dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/boton"
         android:fontFamily="cursive"
-        android:text="Tienda"
+        android:text="Aventura"
         android:textColor="@color/colorLetrasMadera"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bdados"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bpersonajes" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/info"

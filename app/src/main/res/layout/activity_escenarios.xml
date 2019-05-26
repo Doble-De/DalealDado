@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondoescenarios"
-    tools:context=".EscenariosActivity">
+    tools:context="com.dalealdado.choised.EscenariosActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/list"

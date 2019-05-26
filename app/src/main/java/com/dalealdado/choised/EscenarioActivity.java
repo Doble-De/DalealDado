@@ -1,0 +1,15 @@
+package com.dalealdado.choised;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+import com.dalealdado.dalealdado.R;
+
+public class EscenarioActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_escenario);
+    }
+}
