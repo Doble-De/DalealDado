@@ -2,12 +2,12 @@
 <resources>
     <color name="colorPrimary">#67AB9F</color>
     <color name="colorPrimaryDark">#568F84</color>
-    <color name="colorAccent">#d81b31</color>
+    <color name="colorAccent">#D81B31</color>
     <color name="colorLetrasMadera">#281609</color>
-    <color name="colorFondoDados">#d5e8d4</color>
+    <color name="colorFondoDados">#D5E8D4</color>
     <color name="colorFondoEscenario">#004c99</color>
-    <color name="enemigo">#d81b31</color>
-    <color name="heroe">#1b80d8</color>
+    <color name="enemigo">#D81B31</color>
+    <color name="heroe">#1B80D8</color>
     <color name="cajon">#58280f</color>
     <color name="itemcajon">#e6a1613f</color>
     <color name="botonescenario">#4228d1</color>
@@ -15,4 +15,6 @@
     <color name="infoenemigos">#bd38090a</color>
     <color name="infoeheroes">#c216437e</color>
     <color name="transparente">#00ffffff</color>
+    <color name="rojoflojo">#FF9999</color>
+    <color name="azulflojo">#99C2FF</color>
 </resources>

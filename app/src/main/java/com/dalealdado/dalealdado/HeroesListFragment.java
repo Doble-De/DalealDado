@@ -6,7 +6,7 @@ import java.util.List;
 
 public class HeroesListFragment extends HeroeListFragment {
     @Override
-    LiveData<List<Heroes>> getHeroes() {
+    LiveData<List<Heroe>> getHeroes() {
         return heroeViewModel.getAllHeroes();
     }
 }

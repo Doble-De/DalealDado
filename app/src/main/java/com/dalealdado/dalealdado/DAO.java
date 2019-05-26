@@ -2,6 +2,7 @@ package com.dalealdado.dalealdado;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
+import android.arch.persistence.room.Delete;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 
@@ -11,28 +12,46 @@ import java.util.List;
 public abstract class DAO {
 
     @Insert
-    abstract void insert(Heroes heroes);
+    abstract void insert(Heroe heroe);
 
     @Insert
-    abstract void insert (Enemigos enemigos);
+    abstract void insert(Enemigo enemigo);
 
     @Insert
     abstract void  insert(Escenario escenario);
 
-    @Query("SELECT * FROM heroes")
-    abstract LiveData<List<Heroes>> getAllHeroes();
+    @Delete
+    abstract void delete(Heroe heroe);
 
-    @Query("SELECT * FROM enemigos")
-    abstract LiveData<List<Enemigos>> getAllEnemigos();
+    @Delete
+    abstract void delete(Escenario escenario);
+
+    @Delete
+    abstract void delete(Enemigo enemigo);
+
+    @Query("DELETE FROM Enemigo WHERE id = :id")
+    abstract void deleteEnemigo(int id);
+
+    @Query("DELETE FROM Heroe WHERE id = :id")
+    abstract int deleteHeroe(int id);
+
+    @Query("DELETE FROM Escenario WHERE id = :id")
+    abstract int deleteEscenario(int id);
+
+    @Query("SELECT * FROM Heroe")
+    abstract LiveData<List<Heroe>> getAllHeroes();
+
+    @Query("SELECT * FROM Enemigo")
+    abstract LiveData<List<Enemigo>> getAllEnemigos();
 
     @Query("SELECT * FROM escenario")
     abstract LiveData<List<Escenario>> getEscenarios();
 
-    @Query("SELECT * FROM heroes WHERE id = :id")
-    abstract LiveData<Heroes> getHeroe(int id);
+    @Query("SELECT * FROM Heroe WHERE id = :id")
+    abstract LiveData<Heroe> getHeroe(int id);
 
-    @Query("SELECT * FROM enemigos WHERE id = :id")
-    abstract LiveData<Enemigos> getEnemigo(int id);
+    @Query("SELECT * FROM Enemigo WHERE id = :id")
+    abstract LiveData<Enemigo> getEnemigo(int id);
 
     @Query("SELECT * from escenario WHERE id=:id")
     abstract LiveData<Escenario> getEscenario(int id);

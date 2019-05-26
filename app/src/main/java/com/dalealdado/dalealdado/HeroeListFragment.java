@@ -17,7 +17,7 @@ import java.util.List;
 
 
 public abstract class HeroeListFragment extends Fragment {
-    HeroeViewModel heroeViewModel;
+    DADViewModel heroeViewModel;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -29,11 +29,11 @@ public abstract class HeroeListFragment extends Fragment {
         final HeroeRecyclerAdapter heroeRecyclerAdapter = new HeroeRecyclerAdapter();
         recyclerView.setAdapter(heroeRecyclerAdapter);
 
-        heroeViewModel = ViewModelProviders.of(this).get(HeroeViewModel.class);
+        heroeViewModel = ViewModelProviders.of(this).get(DADViewModel.class);
 
-        getHeroes().observe(this, new Observer<List<Heroes>>() {
+        getHeroes().observe(this, new Observer<List<Heroe>>() {
             @Override
-            public void onChanged(@Nullable List<Heroes> heroes) {
+            public void onChanged(@Nullable List<Heroe> heroes) {
                 heroeRecyclerAdapter.setList(heroes);
                 heroeRecyclerAdapter.notifyDataSetChanged();
             }
@@ -41,6 +41,6 @@ public abstract class HeroeListFragment extends Fragment {
         return view;
     }
 
-    abstract LiveData<List<Heroes>> getHeroes();
+    abstract LiveData<List<Heroe>> getHeroes();
 }
 

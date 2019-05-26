@@ -5,7 +5,7 @@ import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
-@Database(entities = {Heroes.class, Enemigos.class, Escenario.class}, version = 5)
+@Database(entities = {Heroe.class, Enemigo.class, Escenario.class}, version = 2)
 public abstract class DADDatabase extends RoomDatabase {
 
     public abstract DAO DAO();
@@ -18,6 +18,7 @@ public abstract class DADDatabase extends RoomDatabase {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                             DADDatabase.class, "basededatos")
+//                            .allowMainThreadQueries()
                             .fallbackToDestructiveMigration()
                             .build();
                 }

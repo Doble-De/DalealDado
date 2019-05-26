@@ -1,4 +1,4 @@
-package com.dalealdado.dalealdado;
+package com.dalealdado.dalealdado.shake;
 
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;

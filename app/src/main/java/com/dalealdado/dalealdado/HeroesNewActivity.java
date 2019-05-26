@@ -13,7 +13,7 @@ public class HeroesNewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heroes_new);
 
-        final HeroeViewModel heroeViewModel = ViewModelProviders.of(this).get(HeroeViewModel.class);
+        final DADViewModel heroeViewModel = ViewModelProviders.of(this).get(DADViewModel.class);
         findViewById(R.id.guardar).setOnClickListener(new View.OnClickListener() {
 
             EditText Hnombre = findViewById(R.id.etnombre);
@@ -32,22 +32,22 @@ public class HeroesNewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Heroes heroes = new Heroes();
+                Heroe heroe = new Heroe();
 
-                heroes.nombre = Hnombre.getText().toString();
-                heroes.raza = Hraza.getText().toString();
-                heroes.descripcion = Hdesc.getText().toString();
-                heroes.vida = Hvida.getText().toString();
-                heroes.fuerza = Hfuerza.getText().toString();
-                heroes.defensa = Hdefensa.getText().toString();
-                heroes.evasion = Hevasion.getText().toString();
-                heroes.agilidad = Hagilidad.getText().toString();
-                heroes.mana = Hmana.getText().toString();
-                heroes.magia = Hmagia.getText().toString();
-                heroes.habilidades = Hhabilidades.getText().toString();
-                heroes.inventario = Hinventario.getText().toString();
+                heroe.nombre = Hnombre.getText().toString();
+                heroe.raza = Hraza.getText().toString();
+                heroe.descripcion = Hdesc.getText().toString();
+                heroe.vida = Hvida.getText().toString();
+                heroe.fuerza = Hfuerza.getText().toString();
+                heroe.defensa = Hdefensa.getText().toString();
+                heroe.evasion = Hevasion.getText().toString();
+                heroe.agilidad = Hagilidad.getText().toString();
+                heroe.mana = Hmana.getText().toString();
+                heroe.magia = Hmagia.getText().toString();
+                heroe.habilidades = Hhabilidades.getText().toString();
+                heroe.inventario = Hinventario.getText().toString();
 
-                heroeViewModel.insertHeroe(heroes);
+                heroeViewModel.insertHeroe(heroe);
                 finish();
 
             }

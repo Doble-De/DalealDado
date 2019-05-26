@@ -7,10 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.dalealdado.dalealdado.view.EnemigosShowActivity;
+
 import java.util.List;
 
 public class EnemigoRecyclerAdapter extends RecyclerView.Adapter<EnemigoRecyclerAdapter.EnemigoViewHolder> {
-    List<Enemigos> list;
+    List<Enemigo> list;
 
     @Override
     public EnemigoViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
@@ -20,15 +22,15 @@ public class EnemigoRecyclerAdapter extends RecyclerView.Adapter<EnemigoRecycler
 
     @Override
     public void onBindViewHolder (final EnemigoViewHolder holder, int position) {
-        final Enemigos enemigos = list.get(position);
+        final Enemigo enemigo = list.get(position);
 
-        holder.enemigoNombre.setText(enemigos.nombre);
-        holder.enemigoRaza.setText(enemigos.raza);
+        holder.enemigoNombre.setText(enemigo.nombre);
+        holder.enemigoRaza.setText(enemigo.raza);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(holder.itemView.getContext(), EnemigosShowActivity.class);
-                intent.putExtra("enemigoid", enemigos.id);
+                intent.putExtra("enemigoid", enemigo.id);
                 holder.itemView.getContext().startActivity(intent);
             }
         });
@@ -39,7 +41,7 @@ public class EnemigoRecyclerAdapter extends RecyclerView.Adapter<EnemigoRecycler
         return (list !=null ? list.size() : 0);
     }
 
-    public void setList(List<Enemigos> enemigos){
+    public void setList(List<Enemigo> enemigos){
         this.list = enemigos;
     }
 

@@ -7,11 +7,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.dalealdado.dalealdado.view.HeroesShowActivity;
+
 import java.util.List;
 
 public class HeroeRecyclerAdapter extends RecyclerView.Adapter<HeroeRecyclerAdapter.HeroeViewHolder> {
 
-    List<Heroes> list;
+    List<Heroe> list;
 
     @Override
     public HeroeViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
@@ -21,15 +23,15 @@ public class HeroeRecyclerAdapter extends RecyclerView.Adapter<HeroeRecyclerAdap
 
     @Override
     public void onBindViewHolder (final HeroeViewHolder holder, int position) {
-        final Heroes heroes = list.get(position);
+        final Heroe heroe = list.get(position);
 
-        holder.heroeNombre.setText(heroes.nombre);
-        holder.heroeRaza.setText(heroes.raza);
+        holder.heroeNombre.setText(heroe.nombre);
+        holder.heroeRaza.setText(heroe.raza);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(holder.itemView.getContext(), HeroesShowActivity.class);
-                intent.putExtra("heroeid", heroes.id);
+                intent.putExtra("heroeid", heroe.id);
                 holder.itemView.getContext().startActivity(intent);
             }
         });
@@ -40,7 +42,7 @@ public class HeroeRecyclerAdapter extends RecyclerView.Adapter<HeroeRecyclerAdap
         return (list !=null ? list.size() : 0);
     }
 
-    public void setList(List<Heroes> heroes){
+    public void setList(List<Heroe> heroes){
         this.list = heroes;
     }
 

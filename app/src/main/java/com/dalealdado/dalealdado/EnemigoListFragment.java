@@ -17,7 +17,7 @@ import java.util.List;
 
 
 public abstract class EnemigoListFragment extends Fragment {
-    EnemigoViewModel enemigoViewModel;
+    DADViewModel enemigoViewModel;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -29,11 +29,11 @@ public abstract class EnemigoListFragment extends Fragment {
         final EnemigoRecyclerAdapter enemigoRecyclerAdapter = new EnemigoRecyclerAdapter();
         recyclerView.setAdapter(enemigoRecyclerAdapter);
 
-        enemigoViewModel = ViewModelProviders.of(this).get(EnemigoViewModel.class);
+        enemigoViewModel = ViewModelProviders.of(this).get(DADViewModel.class);
 
-        getEnemigos().observe(this, new Observer<List<Enemigos>>() {
+        getEnemigos().observe(this, new Observer<List<Enemigo>>() {
             @Override
-            public void onChanged(@Nullable List<Enemigos> enemigos) {
+            public void onChanged(@Nullable List<Enemigo> enemigos) {
                 enemigoRecyclerAdapter.setList(enemigos);
                 enemigoRecyclerAdapter.notifyDataSetChanged();
             }
@@ -41,5 +41,5 @@ public abstract class EnemigoListFragment extends Fragment {
         return view;
     }
 
-    abstract LiveData<List<Enemigos>> getEnemigos();
+    abstract LiveData<List<Enemigo>> getEnemigos();
 }

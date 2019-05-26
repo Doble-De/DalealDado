@@ -25,8 +25,8 @@ public class PersonajesActivity extends AppCompatActivity {
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
-    private EnemigoViewModel enemigosViewModel;
-    private HeroeViewModel heroesViewModel;
+    private DADViewModel enemigosViewModel;
+    private DADViewModel heroesViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,8 +57,8 @@ public class PersonajesActivity extends AppCompatActivity {
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
-        heroesViewModel = ViewModelProviders.of(PersonajesActivity.this).get(HeroeViewModel.class);
-        enemigosViewModel = ViewModelProviders.of(PersonajesActivity.this).get(EnemigoViewModel.class);
+        heroesViewModel = ViewModelProviders.of(PersonajesActivity.this).get(DADViewModel.class);
+        enemigosViewModel = ViewModelProviders.of(PersonajesActivity.this).get(DADViewModel.class);
     }
 
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
@@ -78,7 +78,7 @@ public class PersonajesActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 3;
+            return 2;
         }
     }
 }

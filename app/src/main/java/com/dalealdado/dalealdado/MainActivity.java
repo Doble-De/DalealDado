@@ -7,6 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.dalealdado.dalealdado.view.Aventura.Fuente;
+import com.dalealdado.dalealdado.view.Aventura.ProtagonistaActivity;
+
 public class MainActivity extends AppCompatActivity {
     MediaPlayer mp;
 
@@ -40,10 +43,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.btienda).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.baventura).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ShopActivity.class));
+                startActivity(new Intent(MainActivity.this, ProtagonistaActivity.class));
                 mp.stop();
             }
         });

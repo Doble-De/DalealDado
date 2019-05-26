@@ -13,7 +13,7 @@ public class EnemigosNewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enemigos_new);
 
-        final EnemigoViewModel enemigoViewModel = ViewModelProviders.of(this).get(EnemigoViewModel.class);
+        final DADViewModel enemigoViewModel = ViewModelProviders.of(this).get(DADViewModel.class);
         findViewById(R.id.guardar).setOnClickListener(new View.OnClickListener() {
 
             EditText Enombre = findViewById(R.id.etEnombre);
@@ -32,22 +32,22 @@ public class EnemigosNewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Enemigos enemigos = new Enemigos();
+                Enemigo enemigo = new Enemigo();
 
-                enemigos.nombre = Enombre.getText().toString();
-                enemigos.raza = Eraza.getText().toString();
-                enemigos.descripcion = Edesc.getText().toString();
-                enemigos.vida = Evida.getText().toString();
-                enemigos.fuerza = Efuerza.getText().toString();
-                enemigos.defensa = Edefensa.getText().toString();
-                enemigos.evasion = Eevasion.getText().toString();
-                enemigos.agilidad = Eagilidad.getText().toString();
-                enemigos.mana = Emana.getText().toString();
-                enemigos.magia = Emagia.getText().toString();
-                enemigos.habilidades = Ehabilidades.getText().toString();
-                enemigos.drop = Edrop.getText().toString();
+                enemigo.nombre = Enombre.getText().toString();
+                enemigo.raza = Eraza.getText().toString();
+                enemigo.descripcion = Edesc.getText().toString();
+                enemigo.vida = Evida.getText().toString();
+                enemigo.fuerza = Efuerza.getText().toString();
+                enemigo.defensa = Edefensa.getText().toString();
+                enemigo.evasion = Eevasion.getText().toString();
+                enemigo.agilidad = Eagilidad.getText().toString();
+                enemigo.mana = Emana.getText().toString();
+                enemigo.magia = Emagia.getText().toString();
+                enemigo.habilidades = Ehabilidades.getText().toString();
+                enemigo.drop = Edrop.getText().toString();
 
-                enemigoViewModel.insertEnemigo(enemigos);
+                enemigoViewModel.insertEnemigo(enemigo);
                 finish();
             }
         });

@@ -1,4 +1,4 @@
-package com.dalealdado.dalealdado;
+package com.dalealdado.dalealdado.shake;
 
 import android.app.Service;
 import android.content.Context;

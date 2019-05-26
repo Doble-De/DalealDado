@@ -18,7 +18,8 @@
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
 
 
             <TextView
@@ -26,13 +27,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
                 android:background="@color/infoeheroes"
                 android:textColor="@color/colorFondoDados"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -291,6 +293,38 @@
                 android:textSize="18sp"
                 app:layout_constraintStart_toEndOf="@+id/etevasion"
                 app:layout_constraintTop_toBottomOf="@+id/tvinventario" />
+
+
+            <Button
+                android:id="@+id/modificar"
+                android:layout_width="107dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="48dp"
+                android:background="@color/azulflojo"
+                android:text="Modificar"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ethabilidades" />
+
+            <Button
+                android:id="@+id/eliminar"
+                android:layout_width="107dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/rojoflojo"
+                android:text="Eliminar"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ethabilidades" />
+
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 

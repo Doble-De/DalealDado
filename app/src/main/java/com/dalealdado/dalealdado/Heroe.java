@@ -4,7 +4,7 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
 @Entity
-public class Heroes {
+public class Heroe {
     @PrimaryKey(autoGenerate = true)
     public int id;
 
